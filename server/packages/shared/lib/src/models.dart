@@ -17,5 +17,6 @@ class User with _$User implements db.UserView {
   factory User.fromDb(db.UserView dbUser) => User(
         id: dbUser.id,
         name: dbUser.name,
+        email: dbUser.email!,
       );
 }

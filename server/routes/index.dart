@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
 
 import 'package:dart_frog/dart_frog.dart';
 import 'package:db/db.dart' as db;
@@ -17,7 +16,7 @@ FutureOr<Response> onRequest(RequestContext context) async {
 
   final db = context.read<Database>();
 
-  final user = await db.users.queryUser(2);
+  final user = await db.users.queryUser(1);
 
   if (user == null) {
     return Response(body: 'Not Found', statusCode: 404);

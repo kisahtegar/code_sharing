@@ -17,9 +17,9 @@ import 'package:stormberry/stormberry.dart';
 final db = Database(
   host: 'localhost',
   port: 5432,
-  database: 'postgres',
+  database: 'dbcodesharing',
   user: 'postgres',
-  password: 'changeme',
+  password: 'admin',
   useSSL: false,
   isUnixSocket: false,
 );
